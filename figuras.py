@@ -1,4 +1,3 @@
-
 def cuadrado():
 	l1 = int(input("INGRESE LADO 1: "))
 	l2 = int(input("INGRESE LADO 2: "))
@@ -7,10 +6,24 @@ def cuadrado():
 	perimetro = l1 + l2 + l3 + l4
 	print("EL PERIMETRO ES: "+ str(perimetro))
 
+def triangulo():
+	base = int(input("INGRESE LA BASE: "))
+	altura = int(input("INGRESE LA ALTURA: "))
+	l1 = int(input("INGRESE LADO 1: "))
+	l2 = int(input("INGRESE LADO 2: "))
+	area = (base*altura)/2
+	perimetro = l1 + l2 + base
+	print("EL PERIMETRO ES: "+ str(perimetro))
+	print ("EL AREA DEL TRIANGULO ES: "+str(area))
+	pass
+
 
 a = int (input("INGRESE NUMERO DE LADOS DE SU FIGURA: "))
 if (a == 1 or a == 2):
-	print ("NO existe figura de un lado")
+	print ("NO EXISTE FIGURA")
+if (a == 3):
+	print ("SU FIGURA ES UN TRIANGULO")
+	triangulo()
 if (a == 4):
     print ("SU FIGURA ES UN CUADRILATERO: \n") 
     cuadrado()
