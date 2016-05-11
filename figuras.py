@@ -21,7 +21,7 @@ def triangulo():
 def pentagono():
 	lado= int(input("INGRESE EL LADO: "))
 	radio= int(input("INGRESE EL RADIO: "))
-	apotema=math.sqrt((radio*radio)-(1/2*1/2))
+	apotema=math.sqrt((radio*radio)-(lado/2*lado/2))
 	perimetro=lado*radio
 	area=(perimetro*apotema)/2
 	print("EL PERIMETRO ES: "+ str(perimetro))
