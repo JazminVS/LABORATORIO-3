@@ -39,5 +39,5 @@ if (a == 4):
     cuadrado()
 if (a == 5):
     print ("SU FIGURA ES UN PENTAGONO: \n") 
-    cuadrado()
+    pentagono()
 
