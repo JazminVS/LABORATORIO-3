@@ -1,3 +1,4 @@
+import math
 def cuadrado():
 	l1 = int(input("INGRESE LADO 1: "))
 	l2 = int(input("INGRESE LADO 2: "))
@@ -17,7 +18,16 @@ def triangulo():
 	print ("EL AREA DEL TRIANGULO ES: "+str(area))
 	pass
 
-
+def pentagono():
+	lado= int(input("INGRESE EL LADO: "))
+	radio= int(input("INGRESE EL RADIO: "))
+	apotema=math.sqrt((radio*radio)-(1/2)(1/2))
+	perimetro=lado*radio
+	area=(perimetro*apotema)/2
+	print("EL PERIMETRO ES: "+ str(perimetro))
+	print ("EL AREA DEL TRIANGULO ES: "+str(area))
+	
+	
 a = int (input("INGRESE NUMERO DE LADOS DE SU FIGURA: "))
 if (a == 1 or a == 2):
 	print ("NO EXISTE FIGURA")
@@ -26,5 +36,8 @@ if (a == 3):
 	triangulo()
 if (a == 4):
     print ("SU FIGURA ES UN CUADRILATERO: \n") 
+    cuadrado()
+if (a == 5):
+    print ("SU FIGURA ES UN PENTAGONO: \n") 
     cuadrado()
 
